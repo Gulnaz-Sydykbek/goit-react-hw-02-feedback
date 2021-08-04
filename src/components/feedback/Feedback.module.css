@@ -1,0 +1,38 @@
+.button {
+  width: 90px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.button:focus,
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button:not(:last-child) {
+  margin-right: 30px;
+}
+
+.button:nth-child(1) {
+  background-color: #00ff00;
+}
+
+.button:nth-child(2) {
+  background-color: #ffff00;
+}
+
+.button:nth-child(3) {
+  background-color: #dc143c;
+}
+
+.statistics {
+  padding: 2px 7px;
+  border-radius: 50%;
+}
