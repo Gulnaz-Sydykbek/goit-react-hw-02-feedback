@@ -33,6 +33,7 @@
 }
 
 .statistics {
-  padding: 2px 7px;
+  margin-left: 5px;
+  padding: 2px 9px;
   border-radius: 50%;
 }

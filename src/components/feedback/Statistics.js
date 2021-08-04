@@ -9,19 +9,19 @@ function Statistics(props) {
   return (
     <div>
       <p>
-        Good:{' '}
+        Good:
         <span className={statistics} style={{ backgroundColor: '#00ff00' }}>
           {good}
         </span>
       </p>
       <p>
-        Neutral:{' '}
+        Neutral:
         <span className={statistics} style={{ backgroundColor: '#ffff00' }}>
           {neutral}
         </span>
       </p>
       <p>
-        Bad:{' '}
+        Bad:
         <span className={statistics} style={{ backgroundColor: '#dc143c' }}>
           {bad}
         </span>
