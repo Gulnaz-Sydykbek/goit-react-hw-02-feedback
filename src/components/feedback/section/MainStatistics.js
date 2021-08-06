@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from './Feedback.module.css';
+import s from '../feedbackOptions/Feedback.module.css';
 
-function Statistics(props) {
-  const { good, neutral, bad, total, positivePercentage } = props;
+function MainStatistics(props) {
+  const { good, neutral, bad } = props;
   const { statistics } = s;
 
   return (
-    <div>
+    <>
       <p>
         Good:
         <span className={statistics} style={{ backgroundColor: '#00ff00' }}>
@@ -26,18 +26,14 @@ function Statistics(props) {
           {bad}
         </span>
       </p>
-      <p>Total: {total}</p>
-      <p>Positive feedback: {positivePercentage}%</p>
-    </div>
+    </>
   );
 }
 
-Statistics.propTypes = {
+MainStatistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired,
 };
 
-export default Statistics;
+export default MainStatistics;
